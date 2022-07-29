@@ -1389,15 +1389,6 @@ img {
         function isOverflow(element) {
             return element.scrollHeight > 50 || element.scrollWidth > header.scrollWidth;
         }
-        let el = document.getElementById('wall-title');
-        let fontSize = 18;
-        for (let i = fontSize; i >= 0; i--) {
-            let overflow = isOverflow(el);
-            if (overflow) {
-                fontSize--;
-                el.style.fontSize = fontSize + "px";
-            }
-        }
     </script>
     <script>
         let isBackFormDetailDisplay = window.sessionStorage.getItem("isBackFormDetailDisplay");
